@@ -1,0 +1,17 @@
+let vly;
+let sinh;
+let hoa;
+let tem;
+let r;
+r = parseFloat (prompt("Enter radius"));
+tem = parseFloat (prompt("Enter temperature(C)"));
+vly = parseFloat (prompt("Enter your physical point"));
+sinh = parseFloat (prompt("Enter your biology point"));
+hoa = parseFloat(prompt("Enter your chemistry point"));
+// document.getElementById("average"+ (vly + sinh + hoa)/3);
+// document.getElementById("sum"+ (vly + sinh + hoa));
+document.getElementById("sum").innerHTML = "sum = "+(vly + sinh + hoa)/3;
+document.getElementById("average").innerHTML = "average = "+(vly + sinh + hoa);
+document.getElementById("tem").innerHTML = "temperature(F) ="+((9*tem)/5 +32);
+document.getElementById("circuit").innerHTML = "circuit ="+(r*2*3.14);
+document.getElementById("area").innerHTML = "area ="+(r*r*3.14);
